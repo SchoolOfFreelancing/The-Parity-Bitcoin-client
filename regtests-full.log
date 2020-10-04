@@ -1,0 +1,28 @@
+USAGE: bitcoinjBlockStoreLocation runLargeReorgs(1/0) [port=18444]
+12:10:53 1 H2FullPrunedBlockStore.<init>: org.h2.Driver loaded. 
+12:10:54 1 H2FullPrunedBlockStore.maybeConnect: Made a new connection to database jdbc:h2:/tmp/regtest-db;create=true;LOCK_TIMEOUT=60000
+12:10:54 1 AbstractBlockChain.<init>: chain head is at height 0:
+v1 block: 
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   merkle root: 4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b
+   time: [1296688602] Wed Feb 02 23:16:42 UTC 2011
+   difficulty target (nBits): 545259519
+   nonce: 2
+
+12:10:54 1 AbstractBlockChain.<init>: chain head is at height 0:
+v1 block: 
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   merkle root: 4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b
+   time: [1296688602] Wed Feb 02 23:16:42 UTC 2011
+   difficulty target (nBits): 545259519
+   nonce: 2
+
+12:10:54 17 NioClientManager.handleKey: Successfully connected to localhost/127.0.0.1:18444
+12:10:54 17 Peer.connectionOpened: Announcing to localhost/127.0.0.1:8333 as: /bitcoinj:0.12-SNAPSHOT/BlockAcceptanceComparisonTool:1.1/
+12:10:54 17 Peer.processVersionMessage: Connected to 127.0.0.1: version=70014, subVer='/Satoshi:0.12.1/', services=0x9, time=2020-10-04 12:10:54, blocks=0
+12:10:54 17 BitcoindComparisonTool$1.onPeerConnected: bitcoind connected
+12:10:54 17 BitcoindComparisonTool$1.onPreMessageReceived: Got a request for a header before we had even begun processing blocks!
+12:10:54 1 BitcoindComparisonTool.main: Testing block Initial Block 4ac02013183fd2cb526f42851399d289beec51777c775a0bf0678367adb94831
+12:10:54 1 BitcoindComparisonTool.main: Sent inv with block 4ac02013183fd2cb526f42851399d289beec51777c775a0bf0678367adb94831
+12:10:54 17 BitcoindComparisonTool$1.onPreMessageReceived: Requested 4ac02013183fd2cb526f42851399d289beec51777c775a0bf0678367adb94831
+12:10:54 17 BitcoindComparisonTool$1.onPreMessageReceived: bitcoind sent us a block it already had, make sure bitcoind has no blocks!
